@@ -15,7 +15,7 @@ pipeline {
                 sh 'echo Building.. $NAME'
                 sh 'echo $secret'
                 sh '''
-                    touch hello.txt
+                    touch hello2.txt
 
 
                 '''
