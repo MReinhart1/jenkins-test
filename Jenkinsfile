@@ -14,16 +14,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo Building.. $NAME'
-                sh 'echo $secret'
-                sh '''
-                    touch hello2.txt
-                    echo A change has been made
-                    echo A chage 3 made
-
-
-                '''
-                sh 'ls'
+                node index.js
             }
         }
         stage('Test') {
