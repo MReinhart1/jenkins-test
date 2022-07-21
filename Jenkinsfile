@@ -16,6 +16,7 @@ pipeline {
                 sh 'echo $secret'
                 sh '''
                     touch hello2.txt
+                    echo A change has been made
 
 
                 '''
