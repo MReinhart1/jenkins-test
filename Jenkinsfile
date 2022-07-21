@@ -17,7 +17,7 @@ pipeline {
                 sh '''
                     touch hello2.txt
                     echo A change has been made
-                    echo A chage 1 made
+                    echo A chage 2 made
 
 
                 '''
