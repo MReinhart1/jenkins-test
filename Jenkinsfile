@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:16.13.1-alpine' }
-    }
+    agent any
 
     environment {
         NAME = "Michael"
@@ -14,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                node index.js
+                node --version
             }
         }
         stage('Test') {
@@ -25,7 +23,6 @@ pipeline {
         stage('Push') {
             steps {
                 echo "Pushing up image"
-                sh 'ls'
             }
             
         }
